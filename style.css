@@ -44,7 +44,8 @@
 
 #navBar img{
     max-height: 100% ;
-    border-radius:100%;
+    border-radius: 100px;
+    width: 100px;
   }
   
 .sidenav {
