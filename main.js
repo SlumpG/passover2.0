@@ -131,14 +131,14 @@ async function getUsers() {
         userTableView.style.maxHeight= '0px';
         userFormView.style.maxHeight= '0px';
         singleCardView.style.maxHeight= '0px';
-        usersCardView.style.maxHeight= '1000px';
+        usersCardView.style.maxHeight= '10000px';
         usersCardView.style.transition='all 2s';
     })
     infoInTableForm.addEventListener('click', () => {
         usersCardView.style.maxHeight= '0px';
         userFormView.style.maxHeight= '0px';
         singleCardView.style.maxHeight= '0px';
-        userTableView.style.maxHeight= '1000px';
+        userTableView.style.maxHeight= '10000px';
         userTableView.style.transition='all 2s';
     });
 
@@ -146,7 +146,7 @@ async function getUsers() {
         userTableView.style.maxHeight= '0px';
         usersCardView.style.maxHeight= '0px';
         singleCardView.style.maxHeight= '0px';
-        userFormView.style.maxHeight = "1000px";
+        userFormView.style.maxHeight = "10000px";
         userFormView.style.transition='all 2s';
 
 
@@ -177,7 +177,7 @@ async function getUsers() {
             userTableView.style.maxHeight='0px';
             usersCardView.style.maxHeight='0px';
             userFormView.style.maxHeight='0px';
-            singleCardView.style.maxHeight="1000px";
+            singleCardView.style.maxHeight="10000px";
             singleCardView.style.transition='all 2s';
     
         })
@@ -188,7 +188,7 @@ async function getUsers() {
     userTableView.style.maxHeight = "0px"
     userFormView.style.maxHeight = "0px"
     singleCardView.style.maxHeight = "0px"
-    usersCardView.style.maxHeight = "1000px"
+    usersCardView.style.maxHeight = "10000px"
 
 }
 getUsers();
