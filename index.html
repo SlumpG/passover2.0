@@ -2,63 +2,69 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Users</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users</title>
 </head>
 
 <body>
-    <div id="containerDiv" class="container bg-secondary">
+  <div id="containerDiv" class="container bg-secondary">
     <nav id="navBar" class="btn-group" role="group" aria-label="Basic example">
-        <button id="register" class="btn btn-dark">Register</button>
-        <a class="nav-link btn-dark" href="https://tech-career-alternative.firebaseapp.com/" target="_blank">
-            <img class="logo" src="imgs/tech-carrier-logo.jpg" alt="tech carrier logo"></a>
-        <a class="nav-link btn-dark" href="#">
-            <img class="logo" src="imgs/indi-logo.jpeg" alt="Indi_Com logo"></a>
-            <button id="infoInCardForm" class="btn btn-dark">Card View</button>
-        <button id="infoInTableForm" class="btn btn-dark">Chart View</button>
-    </nav>  
-    
-<div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
-      <span class="sticky-top" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-      
- 
-    <div id="mainDiv" >
-      <div id="usersCardView" ></div>
-      <div id="userTableView" ></div>
-      <div id="userFormView" ></div>
-      <div id="singleCardView" ></div>
+      <button id="register" class="btn btn-dark">Register</button>
+      <a class="nav-link btn-dark" href="https://tech-career-alternative.firebaseapp.com/" target="_blank">
+        <img class="logo" src="imgs/tech-carrier-logo.jpg" alt="tech carrier logo"></a>
+      <a class="nav-link btn-dark" href="#">
+        <img class="logo" src="imgs/indi-logo.jpeg" alt="Indi_Com logo"></a>
+      <button id="infoInCardForm" class="btn btn-dark">Card View</button>
+      <button id="infoInTableForm" class="btn btn-dark">Chart View</button>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <span class="sticky-top" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+    <div id="mainDiv">
+      <div id="usersCardView"></div>
+      <div id="userTableView"></div>
+      <div id="userFormView"></div>
+      <div id="singleCardView"></div>
     </div>
     <footer class="bg-dark text-center text-white">
-        <div class="container p-4 pb-0">
-          <section class="mb-4">
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/shlomo.gangul.3/" role="button"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/shlomo_gangul/" role="button"><i class="fab fa-instagram"></i></a>
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/shlomo-gangul/" role="button"><i class="fab fa-linkedin-in"></i></a>
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/SlumpG" role="button"><i class="fab fa-github"></i></a>
-          </section>
-        </div>
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/shlomo.gangul.3/"
+            role="button"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/shlomo_gangul/"
+            role="button"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/shlomo-gangul/"
+            role="button"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/SlumpG" role="button"><i
+              class="fab fa-github"></i></a>
+        </section>
+      </div>
 
-      
 
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-white" href="https://github.com/SlumpG">Shlomo Gangul</a>
-        </div>
-      </footer>
- </div>
-    <script src="main.js"></script>
+
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://github.com/SlumpG">Shlomo Gangul</a>
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
 </body>
 
 </html>
