@@ -29,7 +29,6 @@
   flex-flow: wrap;
   justify-content: center;
 
-    
 }
 
 #usersCardView>div:hover{
@@ -44,7 +43,8 @@
 
 
 #navBar img{
-    max-height: 50px ;
+    max-height: 100% ;
+    border-radius:100%;
   }
   
 .sidenav {
