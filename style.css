@@ -89,3 +89,8 @@
 .card{
   width: 16rem;
 }
+@media screen and (max-width: 500px){
+  #userTableView table{
+    font-size:xx-small;
+  }
+}
