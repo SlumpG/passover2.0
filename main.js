@@ -1,6 +1,49 @@
+
+class User {
+
+    constructor() {
+        this.picture = '';
+        this.index = 0;
+        this.name = {
+            first: '',
+            last: ''
+        },
+            this.email = '';
+        this.age = 0;
+        this.phone = 0;
+        
+
+    }
+}
+
+const API = 'https://next.json-generator.com/api/json/get/NJ-UoW2Xq'
+async function getUsersObjectFromApi() {
+
+    let result = await fetch(`${API}`, {});
+    let json = await result.json();
+
+    let usersList = [];
+
+    for (let jsonUser of json) {
+        let user = new User();
+        user.picture = jsonUser.picture;
+        user.age = jsonUser.age;
+        user.phone = jsonUser.phone;
+        user.email = jsonUser.email;
+        user.name = jsonUser.name;
+        user.index = jsonUser.index;
+        
+
+        usersList.push(user);
+    }
+
+    return usersList;
+}
+
+
+
 async function getUsers() {
-    let UsersList = await fetch('https://next.json-generator.com/api/json/get/NJ-UoW2Xq');
-    let Users = await UsersList.json();
+    let Users = await getUsersObjectFromApi();
     let HTML = '';
 
     for (let user of Users) {
