@@ -11,7 +11,7 @@ class User {
             this.email = '';
         this.age = 0;
         this.phone = 0;
-        
+
 
     }
 }
@@ -19,8 +19,8 @@ class User {
 const API = 'https://next.json-generator.com/api/json/get/NJ-UoW2Xq'
 async function getUsersObjectFromApi() {
 
-    let result = await fetch(`${API}`, {});
-    let json = await result.json();
+    const result = await fetch(`${API}`, {});
+    const json = await result.json();
 
     let usersList = [];
 
@@ -32,7 +32,7 @@ async function getUsersObjectFromApi() {
         user.email = jsonUser.email;
         user.name = jsonUser.name;
         user.index = jsonUser.index;
-        
+
 
         usersList.push(user);
     }
@@ -43,7 +43,13 @@ async function getUsersObjectFromApi() {
 
 
 async function getUsers() {
-    let Users = await getUsersObjectFromApi();
+    const Users;
+    try {
+        Users = await getUsersObjectFromApi();
+    }
+    catch {
+        alert("error")
+    }
     let HTML = '';
 
     for (let user of Users) {
@@ -171,26 +177,26 @@ async function getUsers() {
     });
 
     infoInCardForm.addEventListener('click', () => {
-        userTableView.style.maxHeight= '0px';
-        userFormView.style.maxHeight= '0px';
-        singleCardView.style.maxHeight= '0px';
-        usersCardView.style.maxHeight= '10000px';
-        usersCardView.style.transition='all 2s';
+        userTableView.style.maxHeight = '0px';
+        userFormView.style.maxHeight = '0px';
+        singleCardView.style.maxHeight = '0px';
+        usersCardView.style.maxHeight = '10000px';
+        usersCardView.style.transition = 'all 2s';
     })
     infoInTableForm.addEventListener('click', () => {
-        usersCardView.style.maxHeight= '0px';
-        userFormView.style.maxHeight= '0px';
-        singleCardView.style.maxHeight= '0px';
-        userTableView.style.maxHeight= '10000px';
-        userTableView.style.transition='all 2s';
+        usersCardView.style.maxHeight = '0px';
+        userFormView.style.maxHeight = '0px';
+        singleCardView.style.maxHeight = '0px';
+        userTableView.style.maxHeight = '10000px';
+        userTableView.style.transition = 'all 2s';
     });
 
     register.addEventListener('click', () => {
-        userTableView.style.maxHeight= '0px';
-        usersCardView.style.maxHeight= '0px';
-        singleCardView.style.maxHeight= '0px';
+        userTableView.style.maxHeight = '0px';
+        usersCardView.style.maxHeight = '0px';
+        singleCardView.style.maxHeight = '0px';
         userFormView.style.maxHeight = "10000px";
-        userFormView.style.transition='all 2s';
+        userFormView.style.transition = 'all 2s';
 
 
     });
@@ -217,12 +223,12 @@ async function getUsers() {
             }
             HTML += `</div></div></div></div>`;
             singleCardView.innerHTML = HTML;
-            userTableView.style.maxHeight='0px';
-            usersCardView.style.maxHeight='0px';
-            userFormView.style.maxHeight='0px';
-            singleCardView.style.maxHeight="10000px";
-            singleCardView.style.transition='all 2s';
-    
+            userTableView.style.maxHeight = '0px';
+            usersCardView.style.maxHeight = '0px';
+            userFormView.style.maxHeight = '0px';
+            singleCardView.style.maxHeight = "10000px";
+            singleCardView.style.transition = 'all 2s';
+
         })
 
 
@@ -232,6 +238,8 @@ async function getUsers() {
     userFormView.style.maxHeight = "0px"
     singleCardView.style.maxHeight = "0px"
     usersCardView.style.maxHeight = "10000px"
+
+
 
 }
 getUsers();
